@@ -18,7 +18,7 @@ router.post('/storeData', function(req, res, next) {
 //MAY HAVE OTHER CODE in index.js
 
 //load controller code dealing with database mongodb and Routes collection
-var controllerMongoCollection = require('../Controllers/database');
+var controllerMongoCollection = require('../controllers/database');
 
 //CODE to route /getAllRoutes to appropriate  Controller function
 //**************************************************************************
