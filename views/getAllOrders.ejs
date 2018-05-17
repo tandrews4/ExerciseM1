@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>getAllOrders</title>
+</head>
+<body>
+<% results.forEach(function(r) { %>
+<ul>
+    <li>ORDER_ID (_id): <%= r._id %></li>
+    <ul>
+        <li>CUSTOMER_ID: <%= r.CUSTOMER_ID %></li>
+        <li>BILLING_ID: <%= r.BILLING_ID %></li>
+        <li>SHIPPING_ID: <%= r.SHIPPING_ID %></li>
+        <li>DATE: <%= r.DATE %></li>
+        <li>PRODUCT_VECTOR: <%= r.PRODUCT_VECTOR %></li>
+        <li>ORDER_TOTAL: <%= r.ORDER_TOTAL %></li>
+    </ul>
+</ul>
+<% }); %>
+</body>
