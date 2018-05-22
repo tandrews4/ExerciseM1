@@ -1,5 +1,5 @@
 var mongodb = require('mongodb'); // import mongo driver
-var mongoDBURI = 'mongodb://cs3520:cs3520@ds151008.mlab.com:51008/heroku_zsq3qbjc'; // mongo url
+var mongoDBURI = 'mongodb://CS3520:CS3520@ds151008.mlab.com:51008/heroku_zsq3qbjc'; // mongo url
 
 // Exercise M1 test method
 module.exports.getAllOrders = function(req, res) {
