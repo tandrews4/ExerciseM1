@@ -7,7 +7,7 @@ module.exports.getAllOrders = function(req, res) {
         if (err)
             throw err;
 
-        var db = client.db('project2')
+        var db = client.db('heroku_zsq3qbjc')
         var orders = db.collection('ORDERS');
         var data = orders.find().toArray(function(err, docs) {
             res.render('getAllOrders', {results: docs});
