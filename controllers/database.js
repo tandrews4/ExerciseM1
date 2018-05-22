@@ -1,5 +1,5 @@
 var mongodb = require('mongodb'); // import mongo driver
-var mongoDBURI = 'mongodb://Tristan:cs3520@ds151008.mlab.com:51008/heroku_zsq3qbjc'; // mongo url
+var mongoDBURI = 'mongodb://cs3520:cs3520@ds231740.mlab.com:31740/project2'; // mongo url
 
 // Exercise M1 test method
 module.exports.getAllOrders = function(req, res) {
@@ -7,7 +7,7 @@ module.exports.getAllOrders = function(req, res) {
         if (err)
             throw err;
 
-        var db = client.db('heroku_zsq3qbjc')
+        var db = client.db('project2')
         var orders = db.collection('ORDERS');
         var data = orders.find().toArray(function(err, docs) {
             res.render('getAllOrders', {results: docs});
