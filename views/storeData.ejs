@@ -1,0 +1,13 @@
+<div id="finalOrderComplete">
+    <% if (locals.ordernumber) { %>
+
+    <div class="messageline">Order Successful! Your order number is <%= ordernumber %>.</div>
+    <div class="messageline">You'll receive an email with your order confirmation soon.</div>
+    <div class="messageline">Please allow 5-7 business days for delivery.</div>
+
+    <% } else { %>
+    <div class="messageline">Order NOT Successful. Return to cart and try checkout again.</div>
+    <div class="messageline">Error: <%= err.name %></div>
+    <div class="messageline">Code: <%= err.code %></div>
+    <% } %>
+</div>
